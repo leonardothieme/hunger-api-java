@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /api/hunger
+
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: hunger-db
+
+logging:
+  file: /var/java/logs/reseller.log
+  level:
+    org:
+      springframework:
+        data:
+          mongodb: DEBUG
+
